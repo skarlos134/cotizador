@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Prueba menu</title>
+</head>
+<body>
+  
+<div class="container">
+<header>
+    <span>Envios a toda Colombia</span>
+</header>
+
+
+<nav>
+<i><img src="./src/casa.png" alt="inicio"></i>
+<img src="./src/logo.png" alt="logo wow">
+<i><img src="./src/menu.png" alt="menu"></i>
+</nav>
+
+
+
+<div class="producto">
+    <h1>Sellos</h1>
+</div>
+
+<section class="wrapper">
+
+    <div class="imagen-producto">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide"><img src="./src/stickers.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./src/sticker2.jpg" alt=""></div>
+              <div class="swiper-slide"><img src="./src/sticker3.jpg"></div>
+                           
+            </div>
+            <div class="swiper-pagination"></div>
+            
+            
+          </div> 
+        <span>base madera
+            sello de goma
+            ideal para marcar pepel, carton
+            no funciona en plastico
+            </span>   
+    </div>
+
+    <div class="producto-form">
+        <form action="cotizar">
+            <label for="ancho">ancho - cm</label>
+            <input type="text" name="ancho" id="ancho" value="4">
+            <label for="alto">alto - cm</label>
+            <input type="text" name="alto" id="alto" value="4">
+            <label for="cantidad">cantidad</label>
+            <select name="cantidad" id="cantidad">
+                <option value="50">50</option>
+                <option value="100">100</option>
+                <option value="200">200</option>
+                <option value="300" selected>300</option>
+                
+            </select>
+        </form>
+
+        <h1 class="precio" id="precio">$35.000</h1>
+        <span>Este precio no incluye envio
+            Incluye almohadilla de tinta
+            7x11cm</span>
+        
+    </div>
+    
+</section>
+<div class="buttons">
+    <button onclick="calcularPrecio()">Cotizar</button>
+</div>
+
+<footer><img src="./src/mediosdepago.png" alt="mnedios de pago"></footer>
+
+
+</div>
+<script src="./script.js"></script>
+<script type="module">
+    import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+    const swiper = new Swiper('.swiper')
+  </script>
+</body>
+</html>
